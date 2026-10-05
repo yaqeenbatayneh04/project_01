@@ -3,88 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>%> 42 - Exercise 04</title>
+    <title>Exercise 04</title>
 </head>
 <body>
-
     <h1>User Registration Form</h1>
 
     <form action="#" method="POST">
-        
-        <!-- 1. Text Input for Full Name -->
-        <div>
-            <label for="fullname">Full Name:</label><br>
-            <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name">
-        </div>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3">
 
-        <br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
 
-        <!-- 2. Email Input -->
-        <div>
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required placeholder="name@example.com">
-        </div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
 
-        <br>
+        <p>Experience Level:</p>
+        <input type="radio" id="beginner" name="experience" value="beginner" checked>
+        <label for="beginner">Beginner</label>
 
-        <!-- 3. Password Input -->
-        <div>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters">
-        </div>
+        <input type="radio" id="intermediate" name="experience" value="intermediate">
+        <label for="intermediate">Intermediate</label>
 
-        <br>
+        <input type="radio" id="advanced" name="experience" value="advanced">
+        <label for="advanced">Advanced</label>
 
-        <!-- 4. Radio Buttons Group -->
-        <div>
-            <label>Experience Level:</label><br>
-            <input type="radio" id="beginner" name="experience" value="beginner" checked>
-            <label for="beginner">Beginner</label><br>
-            
-            <input type="radio" id="intermediate" name="experience" value="intermediate">
-            <label for="intermediate">Intermediate</label><br>
-            
-            <input type="radio" id="advanced" name="experience" value="advanced">
-            <label for="advanced">Advanced</label>
-        </div>
-
-        <br>
-
-        <!-- 5. Select Dropdown -->
-        <div>
-            <label for="track">Preferred Track:</label><br>
+        <p>
+            <label for="track">Preferred Track:</label>
             <select id="track" name="track" required>
                 <option value="">--Please choose an option--</option>
                 <option value="cybersecurity">Cybersecurity</option>
                 <option value="web">Web Development</option>
-                <option value="systems">Systems & Networks</option>
             </select>
-        </div>
+        </p>
 
-        <br>
-
-        <!-- 6. Textarea -->
-        <div>
+        <p>
             <label for="bio">Short Bio / Comments:</label><br>
-            <textarea id="bio" name="bio" rows="4" cols="30" placeholder="Tell us a bit about yourself..."></textarea>
-        </div>
+            <textarea id="bio" name="bio" rows="4" cols="30"></textarea>
+        </p>
 
-        <br>
-
-        <!-- 7. Checkbox Agreement -->
-        <div>
+        <p>
             <input type="checkbox" id="agreement" name="agreement" required>
             <label for="agreement">I agree to the terms and conditions</label>
-        </div>
+        </p>
 
-        <br>
-
-        <!-- Submit Button -->
-        <div>
-            <button type="submit">Register</button>
-        </div>
-
+        <button type="submit">Register</button>
     </form>
-
 </body>
 </html>
